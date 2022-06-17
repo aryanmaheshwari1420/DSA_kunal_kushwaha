@@ -25,7 +25,7 @@ public class numberPrint {
         System.out.println(n);
         print4(5);
     }
-    // function body is changes here
+    // function body is changes here because print4 doesn't call any other print function
     static void print4(int n){
         System.out.println(n);
     }
