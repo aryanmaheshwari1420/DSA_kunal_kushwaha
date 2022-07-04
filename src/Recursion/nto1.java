@@ -6,6 +6,15 @@ public class nto1 {
         reverse(5);
     }
 
+
+    static void fun(int n){
+        if(n==0){
+            return;
+        }
+        System.out.println(n);
+        fun(--n);
+    }
+
     static void Nto1(int n){
         if (n==0){
             return;
