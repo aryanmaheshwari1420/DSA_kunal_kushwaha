@@ -1,4 +1,4 @@
-package Recursion;
+package MergeSort;
 
 import java.util.Arrays;
 
