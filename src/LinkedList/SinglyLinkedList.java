@@ -1,9 +1,7 @@
 package LinkedList;
 
 
-import java.util.*;
-
-public class LL {
+public class SinglyLinkedList {
 
     private Node head;
     private Node tail;
@@ -24,7 +22,7 @@ public class LL {
         }
     }
 
-    public LL(){
+    public SinglyLinkedList(){
         this.size = 0;
     }
     public void insertFirst(int val){
@@ -143,7 +141,7 @@ public class LL {
 
 
     public static void main(String[] args) {
-        LL obj = new LL();
+        SinglyLinkedList obj = new SinglyLinkedList();
         obj.insertFirst(5);
         obj.insertFirst(17);
         obj.insertFirst(36);
