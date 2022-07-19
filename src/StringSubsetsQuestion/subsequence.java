@@ -1,0 +1,27 @@
+package StringSubsetsQuestion;
+
+//subsets ---> Non - adjacent collection.
+
+// str = "abc"
+// ans = ["a","b","c","ab","ac","bc","abc]
+public class subsequence {
+    public static void main(String[] args) {
+
+        //pattern of taking some elements and removing some is known as this subsets pattern
+        subseq("","abc");
+
+    }
+
+    static void subseq(String p , String up){
+        if(up.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+
+        char ch = up.charAt(0);
+        subseq(p+ch,up.substring(1));
+        subseq(p,up.substring(1));
+    }
+
+
+}

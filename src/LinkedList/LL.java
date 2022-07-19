@@ -8,6 +8,9 @@ public class LL {
     private Node head;
     private Node tail;
 
+    private int  size;
+
+
     private class Node{
         private int value;
         private Node next;
@@ -21,7 +24,6 @@ public class LL {
         }
     }
 
-    private int  size;
     public LL(){
         this.size = 0;
     }
@@ -51,12 +53,11 @@ public class LL {
         for (int i = 1; i < index; i++) {
             temp = temp.next;
         }
-
         Node node = new Node(val, temp.next);
         temp.next = node;
         size++;
     }
-    public int deleteFirst(){
+      public int deleteFirst(){
         int val = head.value;
         head = head.next;
         if(head==null){
