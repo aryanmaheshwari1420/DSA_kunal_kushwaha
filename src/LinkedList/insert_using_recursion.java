@@ -1,15 +1,15 @@
 package LinkedList;
 public class insert_using_recursion {
 
-    private Node head;
+    public Node head;
     private Node tail;
 
     private int  size;
 
 
-    private class Node{
-        private int value;
-        private Node next;
+    public class Node{
+        public int value;
+        public Node next;
 
         public Node(int value) {
             this.value = value;
