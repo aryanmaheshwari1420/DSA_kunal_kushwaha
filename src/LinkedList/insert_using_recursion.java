@@ -148,14 +148,40 @@ public class insert_using_recursion {
         return node;
     }
 
-    public static void main(String[] args) {
-        SinglyLinkedList obj = new SinglyLinkedList();
-        obj.insertFirst(5);
-        obj.insertFirst(17);
-        obj.insertFirst(36);
-        obj.insertFirst(24);
+    public void duplicates(){
+        Node node = head; // starting checking from head
+        while (node.next!=null){
+            if(node.value == node.next.value){
+                node.next = node.next.next;
+                size--;
+            }
+            else{
+                node = node.next;
+            }
+        }
+        tail = node;
+        tail.next = null;
+    }
 
+    public static void main(String[] args) {
+//        SinglyLinkedList obj = new SinglyLinkedList();
+//        obj.insertFirst(5);
+//        obj.insertFirst(17);
+//        obj.insertFirst(36);
+//        obj.insertFirst(24);
+//
+//        obj.display();
+        insert_using_recursion obj = new insert_using_recursion();
+        obj.insertLast(1);
+        obj.insertLast(1);
+        obj.insertLast(1);
+        obj.insertLast(2);
+        obj.insertLast(4);
+        obj.insertLast(4);
         obj.display();
+        obj.duplicates();
+        obj.display();
+
 
     }
 }
