@@ -1,0 +1,42 @@
+AND Properties
+
+
+--> performing and operation with 1 result comes to be the same number
+--> performing and operation with 0 result comes to tbe the 0
+
+
+XOR Properties
+
+a ^ 1 => a (compliment of number will formed)
+a ^ 0 => a (same number will come)
+a ^ a => 0 (0 will be the ans of the xor between them)
+
+
+LEFT SHIFT
+
+if you want to just double the number
+a = 10;
+a << 1  == 2*a
+ans = 20 ;
+
+general format for this
+a << b == a * 2 ^ b
+
+***************------------------------------------********************
+
+
+RIGHT SHIFT
+
+general format for this
+
+a >> b == a / 2^b
+
+
+*********************--------------------------------***********************
+
+que--> Given a no n find if it is odd or even
+
+10100010101 if the last is digit is 1 then the number is odd otherwise it is even
+
+
+

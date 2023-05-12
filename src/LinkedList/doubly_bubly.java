@@ -14,7 +14,8 @@ public class doubly_bubly {
             Node next;
             Node prev;
 
-            public Node(int val){
+            public Node(int val)
+            {
                 this.val = val;
             }
 
