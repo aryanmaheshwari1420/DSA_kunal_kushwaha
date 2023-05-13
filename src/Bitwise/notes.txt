@@ -39,4 +39,6 @@ que--> Given a no n find if it is odd or even
 10100010101 if the last is digit is 1 then the number is odd otherwise it is even
 
 
+*****************------------------------------------************************
+
 
