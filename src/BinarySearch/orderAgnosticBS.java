@@ -1,7 +1,6 @@
 package BinarySearch;
 
 public class orderAgnosticBS {
-
     static int orderAgnosticBS(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
@@ -19,7 +18,6 @@ public class orderAgnosticBS {
             if (arr[mid] == target) {
                 return mid;
             }
-
             if (isAsc) {
                 if (target < arr[mid]) {
                     end = mid - 1;
